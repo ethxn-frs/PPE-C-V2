@@ -1,0 +1,6 @@
+C:\Users\admin\Desktop\Gestion_CommercialeV2\GestionCommerciale\DeclicInfoBLL\bin\Debug\DeclicInfoBLL.dll
+C:\Users\admin\Desktop\Gestion_CommercialeV2\GestionCommerciale\DeclicInfoBLL\bin\Debug\DeclicInfoBLL.pdb
+C:\Users\admin\Desktop\Gestion_CommercialeV2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\Gestion_CommercialeV2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Gestion_CommercialeV2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.dll
+C:\Users\admin\Desktop\Gestion_CommercialeV2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.pdb
