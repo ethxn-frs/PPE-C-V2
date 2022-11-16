@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -70,6 +71,12 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNouveauProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNouveauProduit.Designer.cs">
+      <DependentUpon>frmNouveauProduit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProduits.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNouveauProduit.resx">
+      <DependentUpon>frmNouveauProduit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProduits.resx">
       <DependentUpon>frmProduits.cs</DependentUpon>
@@ -123,6 +133,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeclicInfoBLL\DeclicInfoBLL.csproj">
+      <Project>{2721f5c1-cf7f-49eb-a582-a630a4cd1495}</Project>
+      <Name>DeclicInfoBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeclicInfoBO\DeclicInfoBO.csproj">
+      <Project>{dab136d0-2ff6-44f9-a3c3-329408250642}</Project>
+      <Name>DeclicInfoBO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

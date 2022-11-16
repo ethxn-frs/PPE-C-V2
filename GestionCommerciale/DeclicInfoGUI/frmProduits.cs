@@ -21,5 +21,16 @@ namespace DeclicInfoGUI
         {
             this.Close();
         }
+
+        private void btnNouveau_Click(object sender, EventArgs e)
+        {
+            frmNouveauProduit Frmnouveauproduit = new frmNouveauProduit();
+            Frmnouveauproduit.ShowDialog();
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
