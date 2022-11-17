@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnPrecedent = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvProduits = new System.Windows.Forms.DataGridView();
             this.lblDetails = new System.Windows.Forms.Label();
             this.txtCode = new System.Windows.Forms.TextBox();
             this.txtLibellé = new System.Windows.Forms.TextBox();
@@ -38,7 +38,7 @@
             this.btnModifier = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnNouveau = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPrecedent
@@ -51,18 +51,22 @@
             this.btnPrecedent.UseVisualStyleBackColor = true;
             this.btnPrecedent.Click += new System.EventHandler(this.btnPrecedent_Click);
             // 
-            // dataGridView1
+            // dgvProduits
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(76, 100);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(481, 311);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvProduits.AllowUserToAddRows = false;
+            this.dgvProduits.AllowUserToDeleteRows = false;
+            this.dgvProduits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProduits.Location = new System.Drawing.Point(76, 100);
+            this.dgvProduits.Name = "dgvProduits";
+            this.dgvProduits.ReadOnly = true;
+            this.dgvProduits.Size = new System.Drawing.Size(422, 311);
+            this.dgvProduits.TabIndex = 1;
+            this.dgvProduits.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduits_CellClick);
             // 
             // lblDetails
             // 
             this.lblDetails.AutoSize = true;
-            this.lblDetails.Location = new System.Drawing.Point(943, 141);
+            this.lblDetails.Location = new System.Drawing.Point(908, 145);
             this.lblDetails.Name = "lblDetails";
             this.lblDetails.Size = new System.Drawing.Size(39, 13);
             this.lblDetails.TabIndex = 2;
@@ -109,6 +113,7 @@
             this.btnModifier.TabIndex = 7;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // btnSupprimer
             // 
@@ -143,11 +148,12 @@
             this.Controls.Add(this.txtLibellé);
             this.Controls.Add(this.txtCode);
             this.Controls.Add(this.lblDetails);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvProduits);
             this.Controls.Add(this.btnPrecedent);
             this.Name = "frmProduits";
             this.Text = " ";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmProduits_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,7 +162,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnPrecedent;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvProduits;
         private System.Windows.Forms.Label lblDetails;
         private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.TextBox txtLibellé;

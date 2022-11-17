@@ -31,8 +31,10 @@ C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\bin\Debug\Decli
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\bin\Debug\DeclicInfoGUI.pdb
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\bin\Debug\DeclicInfoBLL.dll
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\bin\Debug\DeclicInfoBO.dll
+C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\bin\Debug\DeclicInfoDAL.dll
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\bin\Debug\DeclicInfoBLL.pdb
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\bin\Debug\DeclicInfoBO.pdb
+C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\bin\Debug\DeclicInfoDAL.pdb
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.csproj.CopyComplete
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.exe
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.pdb

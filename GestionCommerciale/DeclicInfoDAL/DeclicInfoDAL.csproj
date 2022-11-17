@@ -42,7 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnexionBD.cs" />
+    <Compile Include="ProduitDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeclicInfoBO\DeclicInfoBO.csproj">
+      <Project>{dab136d0-2ff6-44f9-a3c3-329408250642}</Project>
+      <Name>DeclicInfoBO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
