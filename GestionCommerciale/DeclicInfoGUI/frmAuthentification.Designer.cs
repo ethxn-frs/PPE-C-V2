@@ -53,6 +53,7 @@
             this.btnQuitter.TabIndex = 1;
             this.btnQuitter.Text = "Quitter";
             this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // txtNom
             // 
@@ -99,7 +100,6 @@
             this.Controls.Add(this.btnConnexion);
             this.Name = "frmAuthentification";
             this.Text = "frmAuthentification";
-            this.Load += new System.EventHandler(this.frmAuthentification_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

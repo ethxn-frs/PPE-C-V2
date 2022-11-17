@@ -17,7 +17,7 @@ namespace DeclicInfoGUI
             InitializeComponent();
         }
 
-        private void frmAuthentification_Click(object sender, EventArgs e)
+        private void btnQuitter_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
