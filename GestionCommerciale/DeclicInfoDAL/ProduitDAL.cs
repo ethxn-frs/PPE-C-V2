@@ -22,7 +22,7 @@ namespace DeclicInfoDAL
             //connexion BD
             SqlConnection maConnexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
 
-            // Création d'une liste vide d'objets Utilisateurs
+            // Création d'une liste vide d'objets Categorie
             List<Produit> Inventaire = new List<Produit>();
 
             SqlCommand cmd = new SqlCommand();
@@ -49,7 +49,7 @@ namespace DeclicInfoDAL
                 else
                 {
                     catégorie = monReader["nom_categorie_produit"].ToString();
-                }
+                } 
                 if (monReader["code_produit"] == DBNull.Value)
                 {
                     prixht = default(string);
@@ -107,7 +107,7 @@ namespace DeclicInfoDAL
             cmd.Parameters.Add(new SqlParameter("@libellé_produit", libellé_produit));
             cmd.Parameters.Add(new SqlParameter("@catégorie_produit", catégorie_produit));
             cmd.Parameters.Add(new SqlParameter("@prixht", prixht));
-            cmd.CommandText = " Update produit Set code_produit = '@code_produit', libelle_produit = '@libellé_produit', categorie_produit = '@catégorie_produit', prixht_produit = '@prixht'";
+            cmd.CommandText = " Update produit Set code_produit = '@code_produit', libelle_produit = '@libellé_produit', catégorie_produit = '@catégorie_produit', prixht_produit = '@prixht'";
             cmd.ExecuteNonQuery();
         }
     }

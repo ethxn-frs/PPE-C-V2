@@ -96,6 +96,7 @@
             this.cmbCategorie.Size = new System.Drawing.Size(121, 21);
             this.cmbCategorie.TabIndex = 5;
             this.cmbCategorie.Text = "Catégorie";
+            this.cmbCategorie.Click += new System.EventHandler(this.cmbCategorie_Click);
             // 
             // txtPdv
             // 

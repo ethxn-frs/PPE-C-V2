@@ -72,5 +72,12 @@ namespace DeclicInfoGUI
         {
             ProduitBLL.EditProduit(txtCode.Text, txtLibellé.Text, cmbCategorie.Text, txtPdv.Text);
         }
+
+        private void cmbCategorie_Click(object sender, EventArgs e)
+        {
+            List<Categorie> categorieList = new List<Categorie>();
+            categorieList = CategorieBLL.getCategories();
+            cmbCategorie.DataSource = categorieList;
+        }
     }
 }
