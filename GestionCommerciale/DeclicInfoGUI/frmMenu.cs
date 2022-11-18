@@ -43,9 +43,10 @@ namespace DeclicInfoGUI
 
         private void btnDeconnexion_Click(object sender, EventArgs e)
         {
-            //this.Close(); ( pas encore d'authentification donc pourra pas arreter le programme)
+            this.Hide();
             frmAuthentification Frmauthentification = new frmAuthentification();
             Frmauthentification.ShowDialog();
+            this.Close();
         }
     }
 }

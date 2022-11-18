@@ -34,6 +34,7 @@
             this.txtMdp = new System.Windows.Forms.TextBox();
             this.lblNom = new System.Windows.Forms.Label();
             this.lblMdp = new System.Windows.Forms.Label();
+            this.txtError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnConnexion
@@ -44,6 +45,7 @@
             this.btnConnexion.TabIndex = 0;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.UseVisualStyleBackColor = true;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
             // btnQuitter
             // 
@@ -87,11 +89,23 @@
             this.lblMdp.TabIndex = 5;
             this.lblMdp.Text = "Mot De Passe";
             // 
+            // txtError
+            // 
+            this.txtError.AutoSize = true;
+            this.txtError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtError.ForeColor = System.Drawing.Color.DarkRed;
+            this.txtError.Location = new System.Drawing.Point(424, 333);
+            this.txtError.Name = "txtError";
+            this.txtError.Size = new System.Drawing.Size(303, 13);
+            this.txtError.TabIndex = 6;
+            this.txtError.Text = "Le mot de passe ou le nom d\'utilisateur est incorrect";
+            // 
             // frmAuthentification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 511);
+            this.Controls.Add(this.txtError);
             this.Controls.Add(this.lblMdp);
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.txtMdp);
@@ -113,5 +127,6 @@
         private System.Windows.Forms.TextBox txtMdp;
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Label lblMdp;
+        private System.Windows.Forms.Label txtError;
     }
 }
