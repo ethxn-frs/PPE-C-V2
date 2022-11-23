@@ -82,7 +82,6 @@ namespace DeclicInfoGUI
             var categorie = (Categorie)cmbCategorie.SelectedItem;
             int Prix = int.Parse(txtPdv.Text);
             ProduitBLL.EditProduit(txtCode.Text, txtLibellé.Text, categorie.Id, Prix);
-            Refresh();
         }
     }
 }
