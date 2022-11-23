@@ -63,14 +63,26 @@ namespace DeclicInfoGUI
             }
         }
 
-        private void btnSupprimer_Click(object sender, EventArgs e)
-        {
-            ProduitBLL.DeleteProduit(txtCode.Text);
-        }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
             ProduitBLL.EditProduit(txtCode.Text, txtLibellé.Text, cmbCategorie.Text, txtPdv.Text);
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e, FormClosingEventArgs ev)
+        {
+
+            var result = MessageBox.Show("voulez vous supprimer ce produit ?", "Error detected in Input", MessageBoxButtons.YesNoCancel);
+
+            if (result == DialogResult.Yes)
+            {
+                ProduitBLL.DeleteProduit(txtCode.Text);
+            }
+            else
+            {
+                ev.Cancel = true;
+            }
+
         }
     }
 }

@@ -29,10 +29,10 @@ namespace DeclicInfoGUI
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
-            string loginChecked =  txtNom.Text;
-            loginChecked = loginChecked.Trim().ToLower();
+           
+            Utilisateur unUtilisateur = new Utilisateur(txtNom.Text,txtMdp.Text);
 
-            Utilisateur test = authentificationBLL.GetUtilisateur(loginChecked);
+            Utilisateur test = authentificationBLL.GetUtilisateur(unUtilisateur);
             if (test == null)
             {
                 txtError.Visible = true;
@@ -42,7 +42,7 @@ namespace DeclicInfoGUI
 
             {
                 this.Hide();
-
+                
                 frmMenu frmMenu = new frmMenu();
                 frmMenu.ShowDialog();
 
