@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace DeclicInfoGUI
         public frmAuthentification()
         {
             InitializeComponent();
+            authentificationBLL.SetChaineConnexion(ConfigurationManager.ConnectionStrings["Client"]);
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)
@@ -27,7 +29,10 @@ namespace DeclicInfoGUI
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
-            Utilisateur test = authentificationBLL.GetUtilisateur(txtNom.Text);
+            string loginChecked =  txtNom.Text;
+            loginChecked = loginChecked.Trim().ToLower();
+
+            Utilisateur test = authentificationBLL.GetUtilisateur(loginChecked);
             if (test == null)
             {
                 txtError.Visible = true;
@@ -43,6 +48,11 @@ namespace DeclicInfoGUI
 
                 this.Close();
             }
+        }
+
+        private void txtError_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

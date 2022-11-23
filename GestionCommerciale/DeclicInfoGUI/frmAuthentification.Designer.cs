@@ -94,11 +94,13 @@
             this.txtError.AutoSize = true;
             this.txtError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtError.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtError.Location = new System.Drawing.Point(424, 333);
+            this.txtError.Location = new System.Drawing.Point(415, 331);
             this.txtError.Name = "txtError";
             this.txtError.Size = new System.Drawing.Size(303, 13);
             this.txtError.TabIndex = 6;
             this.txtError.Text = "Le mot de passe ou le nom d\'utilisateur est incorrect";
+            this.txtError.Visible = false;
+            this.txtError.Click += new System.EventHandler(this.txtError_Click);
             // 
             // frmAuthentification
             // 
