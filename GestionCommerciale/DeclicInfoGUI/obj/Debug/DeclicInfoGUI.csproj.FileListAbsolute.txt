@@ -62,3 +62,4 @@ C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\Decli
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.csproj.CopyComplete
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.exe
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.pdb
+C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.frmConfirmationSuppressionProduit.resources

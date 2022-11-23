@@ -70,11 +70,10 @@ namespace DeclicInfoGUI
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            ProduitBLL.DeleteProduit(txtCode.Text);
-            this.Hide();
-            frmProduits nouvProduit = new frmProduits();
-            nouvProduit.ShowDialog();
-            this.Close();
+            frmConfirmationSuppressionProduit frmsuppression = new frmConfirmationSuppressionProduit( txtCode.Text);
+            Close();
+            frmsuppression.Hide();
+            frmsuppression.ShowDialog();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
