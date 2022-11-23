@@ -10,15 +10,16 @@ namespace DeclicInfoDAL
 {
     public class authentificationDAL
     {
-        public static Utilisateur GetUtilisateur(String userName)
+        public static Utilisateur GetUtilisateur(Utilisateur unUtilisateur)
         {
 
             SqlConnection maConnexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = maConnexion;
-            cmd.CommandText = "SELECT * FROM utilisateur where login_utilisateur = @username";
-            cmd.Parameters.Add(new SqlParameter("@username", userName));
+            cmd.CommandText = "SELECT * FROM utilisateur where login_utilisateur = @username and mdp_utilisateur = @password";
+            cmd.Parameters.Add(new SqlParameter("@username", unUtilisateur.Nom_utilisateur1));
+            cmd.Parameters.Add(new SqlParameter("@password", unUtilisateur.Password_utilisateur1));
 
             SqlDataReader monReader = cmd.ExecuteReader();
 
@@ -26,13 +27,11 @@ namespace DeclicInfoDAL
 
             if (monReader.HasRows)
             {
-                int id;
-                int.TryParse(monReader["id_utilisateur"].ToString(), out id);
                 string nom = monReader["login_utilisateur"].ToString();
                 string password = monReader["mdp_utilisateur"].ToString();
 
                 maConnexion.Close();
-                return new Utilisateur(id, nom, password);
+                return new Utilisateur( nom, password);
 
             }
             else
