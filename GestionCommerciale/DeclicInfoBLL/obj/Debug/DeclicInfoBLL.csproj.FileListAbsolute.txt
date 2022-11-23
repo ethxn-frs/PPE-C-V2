@@ -26,3 +26,14 @@ C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\obj\Debug\Decli
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.csproj.CopyComplete
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.dll
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.pdb
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\bin\Debug\DeclicInfoBLL.dll
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\bin\Debug\DeclicInfoBLL.pdb
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\bin\Debug\DeclicInfoBO.dll
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\bin\Debug\DeclicInfoDAL.dll
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\bin\Debug\DeclicInfoDAL.pdb
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\bin\Debug\DeclicInfoBO.pdb
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.csproj.AssemblyReference.cache
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.csproj.CoreCompileInputs.cache
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.csproj.CopyComplete
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.dll
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBLL\obj\Debug\DeclicInfoBLL.pdb

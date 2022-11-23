@@ -16,3 +16,9 @@ C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\Declic
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.dll
 C:\Users\admin\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.pdb
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBO\bin\Debug\DeclicInfoBO.dll
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBO\bin\Debug\DeclicInfoBO.pdb
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.csproj.AssemblyReference.cache
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.csproj.CoreCompileInputs.cache
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.dll
+C:\Users\Etudiant-BTS\Desktop\test\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.pdb

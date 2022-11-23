@@ -30,7 +30,9 @@ namespace DeclicInfoGUI
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
-            Utilisateur test = authentificationBLL.GetUtilisateur(txtNom.Text);
+            Utilisateur unUtilisateur = new Utilisateur(txtNom.Text, txtMdp.Text);
+
+            Utilisateur test = authentificationBLL.GetUtilisateur(unUtilisateur);
             if (test == null)
             {
                 txtError.Visible = true;

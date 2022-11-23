@@ -12,9 +12,9 @@ namespace DeclicInfoBLL
     public class authentificationBLL
     {
 
-        public static Utilisateur GetUtilisateur(string userName)
+        public static Utilisateur GetUtilisateur(Utilisateur unUtilisateur)
         {
-            return authentificationDAL.GetUtilisateur(userName);
+            return authentificationDAL.GetUtilisateur(unUtilisateur);
         }
         public static void SetChaineConnexion(ConnectionStringSettings chset)
         {
