@@ -40,6 +40,11 @@ namespace DeclicInfoGUI
             dgvProduits.DataSource = produitList;
             dgvProduits.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
+            List<Categorie> categorieList = new List<Categorie>();
+            cmbCategorie.DisplayMember = "Libelle";
+            categorieList = CategorieBLL.getCategories();
+            cmbCategorie.DataSource = categorieList;
+
 
 
             //List = BLL.GetProduit
@@ -57,8 +62,8 @@ namespace DeclicInfoGUI
                 txtLibellé.Text = (string)dgvProduits.CurrentRow.Cells[1].Value;
                 //Catégorie
                 cmbCategorie.Text = (string)dgvProduits.CurrentRow.Cells[2].Value;
-                //Prixht
-                txtPdv.Text = (string)dgvProduits.CurrentRow.Cells[3].Value;
+                //Pdv   
+                txtPdv.Text = dgvProduits.CurrentRow.Cells[3].Value.ToString();
 
             }
         }
@@ -66,11 +71,18 @@ namespace DeclicInfoGUI
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
             ProduitBLL.DeleteProduit(txtCode.Text);
+            this.Hide();
+            frmProduits nouvProduit = new frmProduits();
+            nouvProduit.ShowDialog();
+            this.Close();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            ProduitBLL.EditProduit(txtCode.Text, txtLibellé.Text, cmbCategorie.Text, txtPdv.Text);
+            var categorie = (Categorie)cmbCategorie.SelectedItem;
+            int Prix = int.Parse(txtPdv.Text);
+            ProduitBLL.EditProduit(txtCode.Text, txtLibellé.Text, categorie.Id, Prix);
+            Refresh();
         }
     }
 }

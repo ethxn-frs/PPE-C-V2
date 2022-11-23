@@ -99,6 +99,7 @@
             this.txtError.Size = new System.Drawing.Size(303, 13);
             this.txtError.TabIndex = 6;
             this.txtError.Text = "Le mot de passe ou le nom d\'utilisateur est incorrect";
+            this.txtError.Visible = false;
             // 
             // frmAuthentification
             // 

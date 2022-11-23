@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblNouveauProduit = new System.Windows.Forms.Label();
-            this.txtCode = new System.Windows.Forms.TextBox();
             this.txtLibellé = new System.Windows.Forms.TextBox();
             this.cmbCategorie = new System.Windows.Forms.ComboBox();
             this.txtPdv = new System.Windows.Forms.TextBox();
@@ -45,14 +44,6 @@
             this.lblNouveauProduit.Size = new System.Drawing.Size(87, 13);
             this.lblNouveauProduit.TabIndex = 0;
             this.lblNouveauProduit.Text = "Nouveau Produit";
-            // 
-            // txtCode
-            // 
-            this.txtCode.Location = new System.Drawing.Point(247, 131);
-            this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(100, 20);
-            this.txtCode.TabIndex = 1;
-            this.txtCode.Text = "Code";
             // 
             // txtLibellé
             // 
@@ -109,10 +100,10 @@
             this.Controls.Add(this.txtPdv);
             this.Controls.Add(this.cmbCategorie);
             this.Controls.Add(this.txtLibellé);
-            this.Controls.Add(this.txtCode);
             this.Controls.Add(this.lblNouveauProduit);
             this.Name = "frmNouveauProduit";
             this.Text = "frmNouveauProduit";
+            this.Load += new System.EventHandler(this.frmNouveauProduit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,7 +112,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblNouveauProduit;
-        private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.TextBox txtLibellé;
         private System.Windows.Forms.ComboBox cmbCategorie;
         private System.Windows.Forms.TextBox txtPdv;

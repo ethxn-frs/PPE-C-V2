@@ -25,7 +25,17 @@ namespace DeclicInfoGUI
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            ProduitBLL.AddProduit(txtCode.Text, txtLibellé.Text, cmbCategorie.Text, txtPdv.Text);
+            var categorie = (Categorie)cmbCategorie.SelectedItem;
+            int Prix = int.Parse(txtPdv.Text);
+            ProduitBLL.AddProduit( txtLibellé.Text, categorie.Id, Prix);
+        }
+
+        private void frmNouveauProduit_Load(object sender, EventArgs e)
+        {
+            List<Categorie> categorieList = new List<Categorie>();
+            cmbCategorie.DisplayMember = "Libelle";
+            categorieList = CategorieBLL.getCategories();
+            cmbCategorie.DataSource = categorieList;
         }
     }
 }
