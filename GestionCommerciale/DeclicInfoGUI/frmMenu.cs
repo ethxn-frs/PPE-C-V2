@@ -25,6 +25,7 @@ namespace DeclicInfoGUI
 
         private void btnProduits_Click(object sender, EventArgs e)
         {
+
             frmProduits Frmproduits = new frmProduits();
             Frmproduits.ShowDialog();
         }

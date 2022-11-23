@@ -4,11 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DeclicInfoBLL;
 using DeclicInfoBO;
+
 
 
 namespace DeclicInfoGUI
@@ -18,6 +20,7 @@ namespace DeclicInfoGUI
         public frmAuthentification()
         {
             InitializeComponent();
+            authentificationBLL.SetChaineConnexion(ConfigurationManager.ConnectionStrings["Client"]);
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)
@@ -42,6 +45,7 @@ namespace DeclicInfoGUI
                 frmMenu.ShowDialog();
 
                 this.Close();
+                
             }
         }
     }

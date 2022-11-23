@@ -76,6 +76,7 @@
             // 
             this.txtCode.Location = new System.Drawing.Point(808, 177);
             this.txtCode.Name = "txtCode";
+            this.txtCode.ReadOnly = true;
             this.txtCode.Size = new System.Drawing.Size(100, 20);
             this.txtCode.TabIndex = 3;
             this.txtCode.Text = "Code";

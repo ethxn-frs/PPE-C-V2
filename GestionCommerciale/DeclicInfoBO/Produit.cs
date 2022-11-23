@@ -11,15 +11,15 @@ namespace DeclicInfoBO
         private string _code;
         private string _libellé;
         private string _catégorie;
-        private string _prixht;
+        private int _prixht;
 
         public string Code { get => _code; set => _code = value; }
         public string Libellé { get => _libellé; set => _libellé = value; }
         public string Catégorie { get => _catégorie; set => _catégorie = value; }
-        public string Prixht { get => _prixht; set => _prixht = value; }
+        public int Prixht { get => _prixht; set => _prixht = value; }
 
 
-        public Produit(string code, string libellé, string catégorie, string prixht)
+        public Produit(string code, string libellé, string catégorie, int prixht)
         {
             _code = code;
             _libellé = libellé;

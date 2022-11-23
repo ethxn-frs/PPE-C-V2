@@ -16,7 +16,7 @@ namespace DeclicInfoDAL
             string code;
             string libellé;
             string catégorie;
-            string prixht;
+            int prixht;
             Produit unProduit;
 
             //connexion BD
@@ -52,11 +52,11 @@ namespace DeclicInfoDAL
                 }
                 if (monReader["code_produit"] == DBNull.Value)
                 {
-                    prixht = default(string);
+                    prixht = default(int);
                 }
                 else
                 {
-                    prixht = monReader["prixht_produit"].ToString();
+                    prixht = (int)monReader["prixht_produit"];
                 }
 
                 unProduit = new Produit(code, libellé, catégorie, prixht);
@@ -73,32 +73,30 @@ namespace DeclicInfoDAL
         {
             SqlConnection maConnexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
 
-            SqlCommand cmd = new SqlCommand();
+                SqlCommand cmd = new SqlCommand();
             cmd.Connection = maConnexion;
             cmd.Parameters.Add(new SqlParameter("@code_produit", code_produit));
             cmd.CommandText = "DELETE FROM produit WHERE code_produit = @code_produit";
             SqlDataReader monReader = cmd.ExecuteReader();
+            maConnexion.Close();
 
         }
 
-        public static void addProduit(string code_produit, string libellé_produit, string catégorie_produit, string prixht)
+        public static void addProduit( string libellé_produit, int catégorie_produit, int prixht)
         {
-            Produit nouveauProduit = new Produit(code_produit, libellé_produit, catégorie_produit, prixht);
             SqlConnection maConnexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = maConnexion;
-            cmd.Parameters.Add(new SqlParameter("@code_produit", code_produit));
             cmd.Parameters.Add(new SqlParameter("@libellé_produit", libellé_produit));
             cmd.Parameters.Add(new SqlParameter("@catégorie_produit", catégorie_produit));
             cmd.Parameters.Add(new SqlParameter("@prixht", prixht));
-            cmd.CommandText = "INSERT INTO produit VALUES('@code_produit', '@libellé_produit', '@catégorie_produit', '@prixht'";
+            cmd.CommandText = "INSERT INTO produit (libelle_produit, id_categorie_produit, prixht_produit) VALUES(@libellé_produit, @catégorie_produit, @prixht)";
             cmd.ExecuteNonQuery();
         }
 
-        public static void editProduit(string code_produit, string libellé_produit, string catégorie_produit, string prixht)
+        public static void editProduit(string code_produit, string libellé_produit, int catégorie_produit, int prixht)
         {
-            Produit nouveauProduit = new Produit(code_produit, libellé_produit, catégorie_produit, prixht);
             SqlConnection maConnexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
 
             SqlCommand cmd = new SqlCommand();
@@ -107,7 +105,7 @@ namespace DeclicInfoDAL
             cmd.Parameters.Add(new SqlParameter("@libellé_produit", libellé_produit));
             cmd.Parameters.Add(new SqlParameter("@catégorie_produit", catégorie_produit));
             cmd.Parameters.Add(new SqlParameter("@prixht", prixht));
-            cmd.CommandText = " Update produit Set code_produit = '@code_produit', libelle_produit = '@libellé_produit', categorie_produit = '@catégorie_produit', prixht_produit = '@prixht'";
+            cmd.CommandText = " Update produit Set libelle_produit = @libellé_produit, id_categorie_produit = @catégorie_produit, prixht_produit = @prixht where id_categorie_produit = @catégorie_produit";
             cmd.ExecuteNonQuery();
         }
     }

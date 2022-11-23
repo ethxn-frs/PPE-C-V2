@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="authentificationDAL.cs" />
+    <Compile Include="CategorieDAL.cs" />
     <Compile Include="ConnexionBD.cs" />
     <Compile Include="ProduitDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

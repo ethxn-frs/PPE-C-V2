@@ -31,14 +31,14 @@ namespace DeclicInfoBLL
             ProduitDAL.deleteProduit(code_produit);
         }
 
-        public static void AddProduit(string code_produit, string libellé_produit, string catégorie_produit, string prixht)
+        public static void AddProduit( string libellé_produit, int catégorie_produit, int prixht)
         {
-            ProduitDAL.addProduit(code_produit, libellé_produit, catégorie_produit, prixht);
+            ProduitDAL.addProduit(libellé_produit, catégorie_produit, prixht);
         }
 
-        public static void EditProduit(string code_produit, string libellé_produit, string catégorie_produit, string prixht)
+        public static void EditProduit(string code_produit, string libellé_produit, int catégorie_produit, int prixht)
         {
-            ProduitDAL.editProduit(code_produit, libellé_produit, catégorie_produit, prixht);
+            ProduitDAL.editProduit(code_produit ,libellé_produit, catégorie_produit, prixht);
         }
     }
 }

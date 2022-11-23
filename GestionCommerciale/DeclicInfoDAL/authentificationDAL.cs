@@ -31,7 +31,9 @@ namespace DeclicInfoDAL
                 string nom = monReader["login_utilisateur"].ToString();
                 string password = monReader["mdp_utilisateur"].ToString();
 
+                maConnexion.Close();
                 return new Utilisateur(id, nom, password);
+
             }
             else
             {
@@ -40,8 +42,6 @@ namespace DeclicInfoDAL
                 return null;
 
             }
-
-
 
         }
     }
