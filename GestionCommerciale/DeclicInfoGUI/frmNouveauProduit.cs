@@ -25,9 +25,12 @@ namespace DeclicInfoGUI
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
+
             var categorie = (Categorie)cmbCategorie.SelectedItem;
+            Categorie uneCategorie = new Categorie(categorie.Id, categorie.Libelle);
             int Prix = int.Parse(txtPdv.Text);
-            ProduitBLL.AddProduit( txtLibellé.Text, categorie.Id, Prix);
+            Produit unProduit = new Produit("0", txtLibellé.Text, uneCategorie, Prix);
+            ProduitBLL.AddProduit(unProduit);
         }
 
         private void frmNouveauProduit_Load(object sender, EventArgs e)

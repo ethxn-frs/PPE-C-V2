@@ -137,3 +137,4 @@ C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoGUI\obj\Debu
 C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.exe
 C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.pdb
 C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.frmConfirmationSuppressionClient.resources
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.frmConfirmationModificationProduit.resources

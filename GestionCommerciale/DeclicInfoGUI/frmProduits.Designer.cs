@@ -38,6 +38,10 @@
             this.btnModifier = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnNouveau = new System.Windows.Forms.Button();
+            this.code_produit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libelle_produit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categorie_produit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prixht_produit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +60,11 @@
             this.dgvProduits.AllowUserToAddRows = false;
             this.dgvProduits.AllowUserToDeleteRows = false;
             this.dgvProduits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProduits.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.code_produit,
+            this.libelle_produit,
+            this.categorie_produit,
+            this.prixht_produit});
             this.dgvProduits.Location = new System.Drawing.Point(76, 100);
             this.dgvProduits.Name = "dgvProduits";
             this.dgvProduits.ReadOnly = true;
@@ -136,6 +145,30 @@
             this.btnNouveau.UseVisualStyleBackColor = true;
             this.btnNouveau.Click += new System.EventHandler(this.btnNouveau_Click);
             // 
+            // code_produit
+            // 
+            this.code_produit.HeaderText = "Code";
+            this.code_produit.Name = "code_produit";
+            this.code_produit.ReadOnly = true;
+            // 
+            // libelle_produit
+            // 
+            this.libelle_produit.HeaderText = "Libellé";
+            this.libelle_produit.Name = "libelle_produit";
+            this.libelle_produit.ReadOnly = true;
+            // 
+            // categorie_produit
+            // 
+            this.categorie_produit.HeaderText = "Categorie";
+            this.categorie_produit.Name = "categorie_produit";
+            this.categorie_produit.ReadOnly = true;
+            // 
+            // prixht_produit
+            // 
+            this.prixht_produit.HeaderText = "PrixHt";
+            this.prixht_produit.Name = "prixht_produit";
+            this.prixht_produit.ReadOnly = true;
+            // 
             // frmProduits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,5 +205,9 @@
         private System.Windows.Forms.Button btnModifier;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnNouveau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn code_produit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn libelle_produit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categorie_produit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prixht_produit;
     }
 }

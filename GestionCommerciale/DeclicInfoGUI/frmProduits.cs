@@ -37,7 +37,11 @@ namespace DeclicInfoGUI
         {
             List<Produit> produitList = new List<Produit>();
             produitList = ProduitBLL.GetProduits();
-            dgvProduits.DataSource = produitList;
+            //dgvProduits.DataSource = produitList;
+            foreach (Produit produit in produitList)
+            {
+                dgvProduits.Rows.Add(produit.Code, produit.Libellé, produit.categorie.Libelle, produit.Prixht);
+            }
             dgvProduits.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             List<Categorie> categorieList = new List<Categorie>();
@@ -78,10 +82,15 @@ namespace DeclicInfoGUI
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            var categorie = (Categorie)cmbCategorie.SelectedItem;
+            //var categorie = (Categorie)cmbCategorie.SelectedItem;
+            Categorie categorie = (Categorie)cmbCategorie.SelectedItem;
+            //Categorie uneCategorie = new Categorie(categorie.Id, categorie.Libelle);
             int Prix = int.Parse(txtPdv.Text);
-            ProduitBLL.EditProduit(txtCode.Text, txtLibellé.Text, categorie.Id, Prix);
-            Refresh();
+            Produit unProduit = new Produit(txtCode.Text, txtLibellé.Text, categorie, Prix);
+            frmConfirmationModificationProduit frmmodifproduit = new frmConfirmationModificationProduit(unProduit);
+            Close();
+            frmmodifproduit.Hide();
+            frmmodifproduit.ShowDialog();
         }
     }
 }
