@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3503ED14-784D-4605-A719-F9E46E43051D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DeclicInfoGUI</RootNamespace>
+    <AssemblyName>DeclicInfoGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAuthentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthentification.Designer.cs">
+      <DependentUpon>frmAuthentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClients.Designer.cs">
+      <DependentUpon>frmClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmationSuppressionClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmationSuppressionClient.Designer.cs">
+      <DependentUpon>frmConfirmationSuppressionClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmationSuppressionProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmationSuppressionProduit.Designer.cs">
+      <DependentUpon>frmConfirmationSuppressionProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevis.Designer.cs">
+      <DependentUpon>frmDevis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNouveauProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNouveauProduit.Designer.cs">
+      <DependentUpon>frmNouveauProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduits.Designer.cs">
+      <DependentUpon>frmProduits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSynthèseClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSynthèseClients.Designer.cs">
+      <DependentUpon>frmSynthèseClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAuthentification.resx">
+      <DependentUpon>frmAuthentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClients.resx">
+      <DependentUpon>frmClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmationSuppressionClient.resx">
+      <DependentUpon>frmConfirmationSuppressionClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmationSuppressionProduit.resx">
+      <DependentUpon>frmConfirmationSuppressionProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDevis.resx">
+      <DependentUpon>frmDevis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNouveauProduit.resx">
+      <DependentUpon>frmNouveauProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduits.resx">
+      <DependentUpon>frmProduits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSynthèseClients.resx">
+      <DependentUpon>frmSynthèseClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeclicInfoBLL\DeclicInfoBLL.csproj">
+      <Project>{2721f5c1-cf7f-49eb-a582-a630a4cd1495}</Project>
+      <Name>DeclicInfoBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeclicInfoBO\DeclicInfoBO.csproj">
+      <Project>{dab136d0-2ff6-44f9-a3c3-329408250642}</Project>
+      <Name>DeclicInfoBO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
