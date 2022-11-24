@@ -150,5 +150,18 @@ namespace DeclicInfoDAL
             maConnexion.Close();
             return listClients;
         }
+
+        public static void deleteClient(string code_client)
+        {
+            SqlConnection maConnexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = maConnexion;
+            cmd.Parameters.Add(new SqlParameter("@code_client", code_client));
+            cmd.CommandText = "DELETE FROM client WHERE code_client = @code_client";
+            SqlDataReader monReader = cmd.ExecuteReader();
+            maConnexion.Close();
+
+        }
     }
 }

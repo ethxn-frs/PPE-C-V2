@@ -71,5 +71,13 @@ namespace DeclicInfoGUI
 
             }
         }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            frmConfirmationSuppressionClient frmsuppression = new frmConfirmationSuppressionClient(txtCode.Text);
+            Close();
+            frmsuppression.Hide();
+            frmsuppression.ShowDialog();
+        }
     }
 }

@@ -25,5 +25,9 @@ namespace DeclicInfoBLL
             return ClientDAL.getClients();
         }
 
+        public static void deleteClient (string code)
+        {
+            ClientDAL.deleteClient(code);
+        }
     }
 }

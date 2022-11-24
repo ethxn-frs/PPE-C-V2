@@ -40,3 +40,12 @@ C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoDAL\obj\Debu
 C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoDAL\obj\Debug\DeclicInfoDAL.csproj.CopyComplete
 C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoDAL\obj\Debug\DeclicInfoDAL.dll
 C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoDAL\obj\Debug\DeclicInfoDAL.pdb
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoDAL\bin\Debug\DeclicInfoDAL.dll
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoDAL\bin\Debug\DeclicInfoDAL.pdb
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoDAL\bin\Debug\DeclicInfoBO.dll
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoDAL\bin\Debug\DeclicInfoBO.pdb
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoDAL\obj\Debug\DeclicInfoDAL.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoDAL\obj\Debug\DeclicInfoDAL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoDAL\obj\Debug\DeclicInfoDAL.csproj.CopyComplete
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoDAL\obj\Debug\DeclicInfoDAL.dll
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoDAL\obj\Debug\DeclicInfoDAL.pdb
