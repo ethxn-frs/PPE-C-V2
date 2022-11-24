@@ -51,7 +51,7 @@
             // 
             // btnPrecedent
             // 
-            this.btnPrecedent.Location = new System.Drawing.Point(956, 39);
+            this.btnPrecedent.Location = new System.Drawing.Point(1023, 40);
             this.btnPrecedent.Name = "btnPrecedent";
             this.btnPrecedent.Size = new System.Drawing.Size(75, 23);
             this.btnPrecedent.TabIndex = 0;
@@ -62,15 +62,16 @@
             // dgvClients
             // 
             this.dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClients.Location = new System.Drawing.Point(56, 39);
+            this.dgvClients.Location = new System.Drawing.Point(30, 39);
             this.dgvClients.Name = "dgvClients";
-            this.dgvClients.Size = new System.Drawing.Size(341, 349);
+            this.dgvClients.ReadOnly = true;
+            this.dgvClients.Size = new System.Drawing.Size(530, 413);
             this.dgvClients.TabIndex = 1;
             this.dgvClients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClients_CellClick);
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(757, 392);
+            this.btnModifier.Location = new System.Drawing.Point(824, 393);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(75, 23);
             this.btnModifier.TabIndex = 3;
@@ -79,7 +80,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(659, 376);
+            this.btnSupprimer.Location = new System.Drawing.Point(726, 377);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 4;
@@ -88,79 +89,80 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(857, 376);
+            this.btnAjouter.Location = new System.Drawing.Point(924, 377);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 5;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(678, 185);
+            this.txtNom.Location = new System.Drawing.Point(745, 186);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(100, 20);
             this.txtNom.TabIndex = 6;
             // 
             // txtFactVille
             // 
-            this.txtFactVille.Location = new System.Drawing.Point(805, 293);
+            this.txtFactVille.Location = new System.Drawing.Point(872, 294);
             this.txtFactVille.Name = "txtFactVille";
             this.txtFactVille.Size = new System.Drawing.Size(100, 20);
             this.txtFactVille.TabIndex = 7;
             // 
             // txtFactRue
             // 
-            this.txtFactRue.Location = new System.Drawing.Point(678, 293);
+            this.txtFactRue.Location = new System.Drawing.Point(745, 294);
             this.txtFactRue.Name = "txtFactRue";
             this.txtFactRue.Size = new System.Drawing.Size(100, 20);
             this.txtFactRue.TabIndex = 8;
             // 
             // txtLivrCodePostal
             // 
-            this.txtLivrCodePostal.Location = new System.Drawing.Point(931, 245);
+            this.txtLivrCodePostal.Location = new System.Drawing.Point(998, 246);
             this.txtLivrCodePostal.Name = "txtLivrCodePostal";
             this.txtLivrCodePostal.Size = new System.Drawing.Size(100, 20);
             this.txtLivrCodePostal.TabIndex = 9;
             // 
             // txtLivrVille
             // 
-            this.txtLivrVille.Location = new System.Drawing.Point(805, 245);
+            this.txtLivrVille.Location = new System.Drawing.Point(872, 246);
             this.txtLivrVille.Name = "txtLivrVille";
             this.txtLivrVille.Size = new System.Drawing.Size(100, 20);
             this.txtLivrVille.TabIndex = 10;
             // 
             // txtLivrRue
             // 
-            this.txtLivrRue.Location = new System.Drawing.Point(678, 245);
+            this.txtLivrRue.Location = new System.Drawing.Point(745, 246);
             this.txtLivrRue.Name = "txtLivrRue";
             this.txtLivrRue.Size = new System.Drawing.Size(100, 20);
             this.txtLivrRue.TabIndex = 11;
             // 
             // txtFax
             // 
-            this.txtFax.Location = new System.Drawing.Point(931, 185);
+            this.txtFax.Location = new System.Drawing.Point(998, 186);
             this.txtFax.Name = "txtFax";
             this.txtFax.Size = new System.Drawing.Size(100, 20);
             this.txtFax.TabIndex = 12;
             // 
             // txtTelephone
             // 
-            this.txtTelephone.Location = new System.Drawing.Point(805, 185);
+            this.txtTelephone.Location = new System.Drawing.Point(872, 186);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(100, 20);
             this.txtTelephone.TabIndex = 13;
             // 
             // txtFactCodePostal
             // 
-            this.txtFactCodePostal.Location = new System.Drawing.Point(931, 293);
+            this.txtFactCodePostal.Location = new System.Drawing.Point(998, 294);
             this.txtFactCodePostal.Name = "txtFactCodePostal";
             this.txtFactCodePostal.Size = new System.Drawing.Size(100, 20);
             this.txtFactCodePostal.TabIndex = 14;
             // 
             // txtCode
             // 
-            this.txtCode.Location = new System.Drawing.Point(744, 125);
+            this.txtCode.Location = new System.Drawing.Point(811, 126);
             this.txtCode.Name = "txtCode";
             this.txtCode.ReadOnly = true;
             this.txtCode.Size = new System.Drawing.Size(100, 20);
@@ -168,21 +170,21 @@
             // 
             // txtLivrNum
             // 
-            this.txtLivrNum.Location = new System.Drawing.Point(553, 245);
+            this.txtLivrNum.Location = new System.Drawing.Point(620, 246);
             this.txtLivrNum.Name = "txtLivrNum";
             this.txtLivrNum.Size = new System.Drawing.Size(100, 20);
             this.txtLivrNum.TabIndex = 16;
             // 
             // txtFactNum
             // 
-            this.txtFactNum.Location = new System.Drawing.Point(553, 293);
+            this.txtFactNum.Location = new System.Drawing.Point(620, 294);
             this.txtFactNum.Name = "txtFactNum";
             this.txtFactNum.Size = new System.Drawing.Size(100, 20);
             this.txtFactNum.TabIndex = 17;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(553, 185);
+            this.txtEmail.Location = new System.Drawing.Point(620, 186);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
             this.txtEmail.TabIndex = 18;

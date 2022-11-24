@@ -71,5 +71,11 @@ namespace DeclicInfoGUI
 
             }
         }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            frmNouveauClient frmNouveauClient = new frmNouveauClient();
+            frmNouveauClient.ShowDialog();
+        }
     }
 }

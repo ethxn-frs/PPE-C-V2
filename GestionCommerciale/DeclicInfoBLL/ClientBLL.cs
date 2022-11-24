@@ -24,6 +24,10 @@ namespace DeclicInfoBLL
         {
             return ClientDAL.getClients();
         }
-
+        public static void AddClient(Client unClient)
+        {
+            ClientDAL.addClient(unClient);
+        }
+        
     }
 }

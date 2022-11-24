@@ -111,3 +111,4 @@ C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debu
 C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.exe
 C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.pdb
 C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.frmConfirmationSuppressionProduit.resources
+C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoGUI\obj\Debug\DeclicInfoGUI.frmNouveauClient.resources

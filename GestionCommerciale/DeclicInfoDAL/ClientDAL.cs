@@ -15,16 +15,16 @@ namespace DeclicInfoDAL
         {
             string Code;
             string Nom;
-            string Adresse_livraison_client_num;
+            int Adresse_livraison_client_num;
             string Adresse_livraison_client_rue;
             string Adresse_livraison_client_ville;
-            string Adresse_livraison_client_code_postal;
-            string Adresse_facturation_client_num;
+            int Adresse_livraison_client_code_postal;
+            int Adresse_facturation_client_num;
             string Adresse_facturation_client_rue;
             string Adresse_facturation_client_ville;
-            string Adresse_facturation_client_code_postal;
-            string Telephone;
-            string Fax;
+            int Adresse_facturation_client_code_postal;
+            int Telephone;
+            int Fax;
             string Email;
             Client unClient;
 
@@ -53,11 +53,11 @@ namespace DeclicInfoDAL
                 }
                 if (monReader["code_client"] == DBNull.Value)
                 {
-                    Adresse_livraison_client_num = default(string);
+                    Adresse_livraison_client_num = default(int);
                 }
                 else
                 {
-                    Adresse_livraison_client_num = monReader["adresse_livraison_client_num"].ToString();
+                    Adresse_livraison_client_num = Int32.Parse(monReader["adresse_livraison_client_num"].ToString()) ;
                 }
                 if (monReader["code_client"] == DBNull.Value)
                 {
@@ -77,19 +77,19 @@ namespace DeclicInfoDAL
                 }
                 if (monReader["code_client"] == DBNull.Value)
                 {
-                    Adresse_livraison_client_code_postal = default(string);
+                    Adresse_livraison_client_code_postal = default(int);
                 }
                 else
                 {
-                    Adresse_livraison_client_code_postal = monReader["adresse_livraison_client_code_postal"].ToString();
+                    Adresse_livraison_client_code_postal = Int32.Parse(monReader["adresse_livraison_client_code_postal"].ToString()) ;
                 }
                 if (monReader["code_client"] == DBNull.Value)
                 {
-                    Adresse_facturation_client_num = default(string);
+                    Adresse_facturation_client_num = default(int);
                 }
                 else
                 {
-                    Adresse_facturation_client_num = monReader["adresse_facture_client_num"].ToString();
+                    Adresse_facturation_client_num = Int32.Parse(monReader["adresse_facture_client_num"].ToString());
                 }
                 if (monReader["code_client"] == DBNull.Value)
                 {
@@ -109,27 +109,27 @@ namespace DeclicInfoDAL
                 }
                 if (monReader["code_client"] == DBNull.Value)
                 {
-                    Adresse_facturation_client_code_postal = default(string);
+                    Adresse_facturation_client_code_postal = default(int);
                 }
                 else
                 {
-                    Adresse_facturation_client_code_postal = monReader["adresse_facture_client_code_postal"].ToString();
+                    Adresse_facturation_client_code_postal = Int32.Parse(monReader["adresse_facture_client_code_postal"].ToString()) ;
                 }
                 if (monReader["code_client"] == DBNull.Value)
                 {
-                    Telephone = default(string);
+                    Telephone = default(int);
                 }
                 else
                 {
-                    Telephone = monReader["telephone_client"].ToString();
+                    Telephone = Int32.Parse(monReader["telephone_client"].ToString());
                 }
                 if (monReader["code_client"] == DBNull.Value)
                 {
-                    Fax = default(string);
+                    Fax = default(int);
                 }
                 else
                 {
-                    Fax = monReader["fax_client"].ToString();
+                    Fax = Int32.Parse(monReader["fax_client"].ToString());
                 }
                 if (monReader["code_client"] == DBNull.Value)
                 {
@@ -140,7 +140,7 @@ namespace DeclicInfoDAL
                     Email = monReader["email_client"].ToString();
                 }
 
-                unClient = new Client(Code, Nom, Adresse_livraison_client_num, Adresse_livraison_client_rue, Adresse_livraison_client_ville, Adresse_livraison_client_code_postal, Adresse_facturation_client_num, Adresse_facturation_client_rue,
+                unClient = new Client(Code ,Nom, Adresse_livraison_client_num, Adresse_livraison_client_rue, Adresse_livraison_client_ville, Adresse_livraison_client_code_postal, Adresse_facturation_client_num, Adresse_facturation_client_rue,
                 Adresse_facturation_client_ville, Adresse_facturation_client_code_postal, Telephone, Fax, Email);
                 listClients.Add(unClient);
 
@@ -149,6 +149,27 @@ namespace DeclicInfoDAL
             //Fermeture de la connexion 
             maConnexion.Close();
             return listClients;
+        }
+        public static void addClient(Client unClient)
+        {
+            SqlConnection maConnexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = maConnexion;
+            cmd.Parameters.Add(new SqlParameter("@nom", unClient.Nom));
+            cmd.Parameters.Add(new SqlParameter("@email", unClient.Email));
+            cmd.Parameters.Add(new SqlParameter("@fax", unClient.Fax));
+            cmd.Parameters.Add(new SqlParameter("@telephone", unClient.Telephone));
+            cmd.Parameters.Add(new SqlParameter("@adresse_facturation_num", unClient.Adresse_facturation_client_num));
+            cmd.Parameters.Add(new SqlParameter("@adresse_facturation_rue", unClient.Adresse_facturation_client_rue));
+            cmd.Parameters.Add(new SqlParameter("@adresse_facturation_ville", unClient.Adresse_facturation_client_ville));
+            cmd.Parameters.Add(new SqlParameter("@adresse_facturation_code_postal", unClient.Adresse_facturation_client_code_postal));
+            cmd.Parameters.Add(new SqlParameter("@adresse_livraison_num", unClient.Adresse_livraison_client_num));
+            cmd.Parameters.Add(new SqlParameter("@adresse_livraison_rue", unClient.Adresse_livraison_client_rue));
+            cmd.Parameters.Add(new SqlParameter("@adresse_livraison_ville", unClient.Adresse_livraison_client_ville));
+            cmd.Parameters.Add(new SqlParameter("@adresse_livraison_code_postal", unClient.Adresse_livraison_client_code_postal));
+            cmd.CommandText = "INSERT INTO client (nom_client, telephone_client, fax_client, email_client, adresse_facture_client_ville, adresse_facture_client_num, adresse_facture_client_rue,adresse_facture_client_code_postal, adresse_livraison_client_ville, adresse_livraison_client_num, adresse_livraison_client_rue, adresse_livraison_client_code_postal) VALUES (@nom, @telephone, @fax, @email, @adresse_facturation_ville, @adresse_facturation_num, @adresse_facturation_rue, @adresse_facturation_code_postal, @adresse_livraison_ville, @adresse_livraison_num, @adresse_livraison_rue, @adresse_livraison_code_postal)";
+            cmd.ExecuteNonQuery();
         }
     }
 }
