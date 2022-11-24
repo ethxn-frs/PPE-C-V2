@@ -28,3 +28,9 @@ C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug
 C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.csproj.CoreCompileInputs.cache
 C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.dll
 C:\Users\Etudiant-BTS\Desktop\PPE-C-V2\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.pdb
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoBO\bin\Debug\DeclicInfoBO.dll
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoBO\bin\Debug\DeclicInfoBO.pdb
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.dll
+C:\Users\admin\Documents\PPE-C-V2-main\GestionCommerciale\DeclicInfoBO\obj\Debug\DeclicInfoBO.pdb
